@@ -3,79 +3,42 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | Product preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
-  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Styling opdracht</title>
 </head>
 
-<body>
-  <section>
-    <div class="container card-learn ">
-      <div>
-        <img src="/images/image-product-desktop.jpg" style="width: 100%;" alt="">
-      </div>
-      <div class="right">
-        <div class="sub-title">
-          <H3>perfume</H3>
-        </div>
-        <div class="title">
-          <h1>Gabrielle Essence Eau De Parfum</h1>
-        </div>
-        <div class="para">
-          <p>A floral, solar and voluptuous interpretation composed by Olivier Polge,
-            Perfumer-Creator for the House of CHANEL.</p>
-        </div>
-        <div class="price">
-          <div>
-            <h1>
-              $149.99
-            </h1>
-          </div>
-          <div>
-            <h4>
-              $169.99
-            </h4>
-          </div>
+<body class="w-[100vw] h-[100vh] flex justify-center bg-orange-50 items-center">
+  <section class="m-4 h-1/2  md:h-2/3 aspect-video flex justify-between  bg-white rounded-lg">
+    <div class="w-1/2 overflow-hidden">
+      <img src="./images/image-product-desktop.jpg" class="rounded-lg" alt="afbeelding">
+    </div>
+    <div class="w-1/2 gap-3 justify-between flex flex-col m-4">
+      <p class="tracking-widest colo text-slate-400">PARFUME</p>
+      <h1 class="text-slate-700 font-bold text-3xl">Gabrielle Essence Eau De Parfum</h1>
+      <p class="text-slate-500">A floral, solar and voluptuous interpretation composed by Olivier Polge,
+        Perfumer-Creator for the house of
+        CHANEL.</p>
+      <div
+        class=" w-10/12 self-center py-3 gap-3 text-white flex rounded-lg justify-center bg-lime-800 hover:bg-lime-600 ">
 
-        </div>
-        <div class="button"></div>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M5.79166 2H1V4H4.2184L6.9872 16.6776H7V17H20V16.7519L22.1932 7.09095L22.5308 6H6.6552L6.08485 3.38852L5.79166 2ZM19.9869 8H7.092L8.62081 15H18.3978L19.9869 8Z"
+            fill="currentColor" />
+          <path
+            d="M10 22C11.1046 22 12 21.1046 12 20C12 18.8954 11.1046 18 10 18C8.89543 18 8 18.8954 8 20C8 21.1046 8.89543 22 10 22Z"
+            fill="currentColor" />
+          <path
+            d="M19 20C19 21.1046 18.1046 22 17 22C15.8954 22 15 21.1046 15 20C15 18.8954 15.8954 18 17 18C18.1046 18 19 18.8954 19 20Z"
+            fill="currentColor" />
+        </svg>
+        <p class="font-medium">Add to Cart</p>
       </div>
     </div>
+
   </section>
-
-
-
-  Preview
-
-
-
-
-
-
-  Add to Cart
-
-
-
-  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"></script> -->
 </body>
 
 </html>
